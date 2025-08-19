@@ -75,7 +75,7 @@
  * | Copy  |   1   |   2   |   3   |   4   |   5   |-----------------------------------|   6   |   7   |   8   |   9   |   0   | BSPC  |
  * | Cut   |  GUI  |  Alt  | Ctrl  | Shift | Paste |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
  * | Ctrl  |  F1   |  F2   |  F3   |  F4   |  F5   |  UnDo |-------------------| ReDo  |  F6   |  F7   |  F8   |  F9   |  F10  | Ctrl  |
- *                                 |       |       |       |       |---| ADJ_L |       |       |       |
+ *                                 |       |       |       |       |---| MOU_L |       |       |       |
  */
                         bindings = <
 &kp  Copy     &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                        &kp   N6      &kp   N7      &kp   N8      &kp   N9      &kp  N0       &trans
@@ -93,7 +93,7 @@
  * | INS   |   !   |   @   |   #   |   $   |   %   |-----------------------------------|   ^   |   &   |   *   |   (   |   )   | BSPC  |
  * |       |   \   |   -   |   =   |   [   |   ]   |-----------------------------------| HOME  | Shift | Ctrl  | Alt   | Gui   | END   |
  * | Ctrl  |   |   |   _   |   +   |   {   |   }   |SkAltGr|-------------------| MENU  | Mute  | Vol-  | Vol+  | Play  |       | Ctrl  |
- *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
+ *                                 |       |       |       |  MOU_L |---|      |       |       |       |
  */
                         bindings = <
 &kp  INS      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp DEL
@@ -110,7 +110,7 @@
  * | Copy  |   1   |   c1  |   c2  |   c3  |   5   |-----------------------------------|   6   |   sL  |   sU  |   sD  |   sR  | BSPC  |
  * | Cut   |  GUI  |  Alt  | Ctrl  | Shift | Paste |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
  * | Ctrl  |  F1   |  F2   |  F3   |  F4   |  F5   |  UnDo |-------------------| ReDo  |  F6   |  F7   |  F8   |  F9   |  F10  | Ctrl  |
- *                                 |       |       |       |       |---| ADJ_L |       |       |       |
+ *                                 |       |       |       |       |---| MOU_L |       |       |       |
  */
                         bindings = <
 &kp  Copy     &kp  N1       &mkp MB1       &mkp MB2       &mkp MB3       &kp  N5                                                                         &kp   N6      &msc SCRL_LEFT      &msc SCRL_UP      &msc SCRL_DOWN      &msc SCRL_RIGHT       &trans
