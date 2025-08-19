@@ -12,13 +12,38 @@
 
 #define NAV_L    1
 #define SYM_L    2
-#define ADJ_L    3
+#define MOU_L    3
 
 #define Undo   LC(Z)
 #define Cut    LC(X)
 #define Copy   LC(C)
 #define Paste  LC(V)
 #define Redo   LC(Y)
+
+#pragma once
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1250
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+
+#define U_MOUSE_MOVE_EXPONENT 1
+#define U_MOUSE_MOVE_TIME 1500
+#define U_MOUSE_MOVE_DELAY 0
+#define U_MOUSE_SCROLL_EXPONENT 1
+#define U_MOUSE_SCROLL_TIME 5000
+#define U_MOUSE_SCROLL_DELAY 0
+
+#define U_BTN1 &mkp MB1
+#define U_BTN2 &mkp MB2
+#define U_BTN3 &mkp MB3
+
+#define U_MS_D &mmv MOVE_DOWN
+#define U_MS_L &mmv MOVE_LEFT
+#define U_MS_R &mmv MOVE_RIGHT
+#define U_MS_U &mmv MOVE_UP
+#define U_WH_D &msc SCRL_DOWN
+#define U_WH_L &msc SCRL_LEFT
+#define U_WH_R &msc SCRL_RIGHT
+#define U_WH_U &msc SCRL_UP
 
 
 / {
@@ -55,7 +80,7 @@
 &kp  Copy     &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                        &kp   N6      &kp   N7      &kp   N8      &kp   N9      &kp  N0       &trans
 &kp  Cut      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Paste                                                                     &kp   PG_UP   &kp  LEFT    &kp   UP      &kp   DOWN    &kp  RIGHT    &kp PG_DN
 &trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &kp RCTRL
-                                                        &trans        &trans        &trans        &trans                 &mo ADJ_L     &trans        &trans        &trans 
+                                                        &trans        &trans        &trans        &trans                 &mo MOU_L     &trans        &trans        &trans 
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -73,7 +98,24 @@
 &kp  INS      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp DEL
 &none         &kp  BSLH     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT                                                                      &kp  HOME     &kp  RSHFT    &kp  RCTRL    &kp  LALT     &kp  RGUI     &kp END
 &trans        &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
-                                                        &trans        &trans        &trans       &mo  ADJ_L               &trans       &trans        &trans        &trans
+                                                        &trans        &trans        &trans       &mo  MOU_L               &trans       &trans        &trans        &trans
+                        >;
+			
+                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+                };
+                mou_layer {
+/* MOU   
+ * -------------------------------------------------------------------------------------------------------------------------------------
+ * | Copy  |   1   |   c1  |   c2  |   c3  |   5   |-----------------------------------|   6   |   sL  |   sU  |   sD  |   sR  | BSPC  |
+ * | Cut   |  GUI  |  Alt  | Ctrl  | Shift | Paste |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
+ * | Ctrl  |  F1   |  F2   |  F3   |  F4   |  F5   |  UnDo |-------------------| ReDo  |  F6   |  F7   |  F8   |  F9   |  F10  | Ctrl  |
+ *                                 |       |       |       |       |---| ADJ_L |       |       |       |
+ */
+                        bindings = <
+&kp  Copy     &kp  N1       &mkp MB1       &mkp MB2       &mkp MB3       &kp  N5                                                                        &kp   N6      &msc SCRL_LEFT      &msc SCRL_UP      &msc SCRL_DOWN      &msc SCRL_RIGHT       &trans
+&kp  Cut      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Paste                                                                     &kp   PG_UP   &mmv MOVE_LEFT    &mmv MOVE_UP      &mmv MOVE_DOWN    &mmv MOVE_RIGHT    &kp PG_DN
+&trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &kp RCTRL
+                                                        &trans        &trans        &trans        &trans                    &trans     &trans        &trans        &trans 
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
