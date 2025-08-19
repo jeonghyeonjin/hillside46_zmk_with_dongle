@@ -45,6 +45,12 @@
 #define U_WH_R &msc SCRL_RIGHT
 #define U_WH_U &msc SCRL_UP
 
+bindings = <
+    &kp Copy &kp N1 &mkp MB1 &mkp MB2 &mkp MB3 &kp N5
+    &kp N6 &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_RIGHT &kp BSPC
+    ...
+>;
+
 
 / {
         keymap {
@@ -112,7 +118,7 @@
  *                                 |       |       |       |       |---| ADJ_L |       |       |       |
  */
                         bindings = <
-&kp  Copy     &kp  N1       &mkp MB1       &mkp MB2       &mkp MB3       &kp  N5                                                                        &kp   N6      &msc SCRL_LEFT      &msc SCRL_UP      &msc SCRL_DOWN      &msc SCRL_RIGHT       &trans
+&kp  Copy     &kp  N1       &mkp MB1       &mkp MB2       &mkp MB3       &kp  N5                                                                         &kp   N6      &msc SCRL_LEFT      &msc SCRL_UP      &msc SCRL_DOWN      &msc SCRL_RIGHT       &trans
 &kp  Cut      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Paste                                                                     &kp   PG_UP   &mmv MOVE_LEFT    &mmv MOVE_UP      &mmv MOVE_DOWN    &mmv MOVE_RIGHT    &kp PG_DN
 &trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &kp RCTRL
                                                         &trans        &trans        &trans        &trans                    &trans     &trans        &trans        &trans 
