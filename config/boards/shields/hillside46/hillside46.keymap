@@ -48,7 +48,6 @@
 bindings = <
     &kp Copy &kp N1 &mkp MB1 &mkp MB2 &mkp MB3 &kp N5
     &kp N6 &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_RIGHT &kp BSPC
-    ...
 >;
 
 
