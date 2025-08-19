@@ -1,10 +1,6 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-#include "https://github.com/manna-harbour/miryoku/custom_config.h"
-#include "https://github.com/manna-harbour/miryoku/mapping/48/hillside48.h"
-#include "https://github.com/manna-harbour/miryoku/miryoku.dtsi"
-
 #include <behaviors.dtsi>
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/keys.h>
