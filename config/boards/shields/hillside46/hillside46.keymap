@@ -1,5 +1,5 @@
 // Copyright 2022 Manna Harbour
-// https://github.com/manna-harbour/miryoku m
+// https://github.com/manna-harbour/miryoku marco
 
 #include <behaviors.dtsi>
 #include <behaviors/mouse_keys.dtsi>
