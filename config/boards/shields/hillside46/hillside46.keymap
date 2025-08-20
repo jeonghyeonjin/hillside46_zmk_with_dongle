@@ -117,7 +117,7 @@
         bindings = <
 &none           &none           &none           &none           &none           &none                                                                                          &none           &none           &none           &none           &none           &none
 &none           &kp   LGUI      &kp   LALT      &kp   LCTRL     &kp   LSHFT     &none                                                                                          &none           &kp   RSHIFT    &kp   RCTRL     &kp   RALT      &kp   RGUI      &none
-&none           &none   F       &none           &none           &none           &none           &trans                                                         &trans          &none           &none           &none           &none           &none           &none
+&none           &none           &none           &none           &none           &none           &trans                                                         &trans          &none           &none           &none           &none           &none           &none
                                                                 &trans          &trans          &trans          &trans                         &trans          &trans          &trans          &trans  
          >;
     };
