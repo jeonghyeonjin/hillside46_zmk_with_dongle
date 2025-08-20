@@ -72,10 +72,7 @@ keymap {
 / {
         keymap {
                 compatible = "zmk,keymap";
-/* QWERTY
- */
-
-                default_layer {
+                   default_layer {
                         bindings = <
 &tog NUM_L    &kp  Q       &kp  W        &kp  E        &kp  R        &kp  T                                                                                        &kp  Y        &kp  U        &kp  I        &kp  O        &mt SEMICOLON COLON    &tog MOU_L
 &kp  F4       &kp  A       &kp  S        &kp  D        &kp  F        &kp  G                                                                                        &kp  H        &kp  J        &kp  K        &kp  L        &kp  P                 &kp  F2  
