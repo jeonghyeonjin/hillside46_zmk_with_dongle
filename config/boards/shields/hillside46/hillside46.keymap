@@ -24,6 +24,8 @@
 #define Paste  LC(V)
 #define Redo   LC(Y)
 
+#define ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
+
 #pragma once
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1250
