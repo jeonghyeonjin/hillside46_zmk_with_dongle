@@ -24,6 +24,7 @@
 #define Paste  LC(V)
 #define Redo   LC(Y)
 
+/ {
 macros {
     euro_symbol: euro_symbol {
         compatible = "zmk,behavior-macro";
