@@ -48,11 +48,17 @@
 #define NUM_L    4
 #define MOD_L    5
 
-&sk {
-    release-after-ms = <2000>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-};
+/ {
+    behaviors {
+      skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        quick-release;
+        ignore-modifiers;
+      };
+    };
 
 / {
         keymap {
