@@ -59,7 +59,6 @@
         ignore-modifiers;
       };
 
-/ {
         keymap {
                 compatible = "zmk,keymap";
 
