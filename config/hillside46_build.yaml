@@ -14,15 +14,21 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: hillside46_dongle
-#    snippet: zmk-usb-logging
+    shield: hillside46_dongle_screen
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+    snippet: zmk-usb-logging
+    artifact-name: hillside46_dongle_screen
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+    artifact-name: hillside46_dongle_screen-settings-reset
   - board: nice_nano_v2
     shield: hillside46_left
-#    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: hillside46_left
   - board: nice_nano_v2
     shield: hillside46_right
-#    snippet: zmk-usb-logging
-#
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: hillside46_right
 #  - board: seeeduino_xiao_ble
 #    shield: settings_reset
 #  - board: nice_nano_v2
