@@ -129,7 +129,7 @@
 
         bindings = <
 &none           &none           &none           &none           &none           &none                                                                                          &none           &none           &none           &none           &none           &none
-&none           &sk   LGUI      &sk   LALT      &sk   LCTRL     &sk   LSHFT     &none                                                                                          &none           &sk   RSHIFT    &sk   RCTRL     &sk   RALT      &skp   RGUI     &none
+&none           &sk   LGUI      &sk   LALT      &sk   LCTRL     &sk   LSHFT     &none                                                                                          &none           &sk   RSHIFT    &sk   RCTRL     &sk   RALT      &sk  RGUI       &none
 &none           &none           &none           &none           &none           &none           &trans                                                         &trans          &none           &none           &none           &none           &none           &none
                                                                 &trans          &trans          &trans          &trans                         &trans          &trans          &trans          &trans  
          >;
