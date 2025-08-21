@@ -75,7 +75,7 @@
 
 /* NAV   
    */           
-                nav_layer {
+                navigazione_layer {
 
         bindings = <
 &trans          &none           &none           &none           &none           &none                                                                                          &kp   K_REDO    &kp   K_COPY    &kp   K_CUT     &kp   K_PASTE   &kp  K_UNDO     &none
@@ -88,7 +88,7 @@
 
 /* SYM
  */
-                sym_layer {
+                simboli_layer {
 
         bindings = <
 &kp   KP_PLUS   &kp   MINUS     &kp   LBRC      &none           &none           &kp   LPAR                                                                                     &none           &none           &none           &none           &none           &none
@@ -100,7 +100,7 @@
 		
 /* MOU   
 */
-                mou_layer {
+                mouse_layer {
 
         bindings = <
 &none           &none           &none           &none           &none           &none                                                                                          &kp   K_REDO    &kp   K_COPY    &kp   K_CUT     &kp   K_PASTE   &kp  K_UNDO     &none
@@ -112,7 +112,7 @@
 
 /* NUM
  */		
-                num_layer {
+                numeri_layer {
 
         bindings = <
 &kp   KP_PLUS   &kp   MINUS     &kp   N7        &kp   N8        &kp   N9        &kp   LPAR                                                                                     &none           &none           &none           &none           &none           &none  
@@ -124,7 +124,7 @@
 
 /* MOD
  */
-                moda_layer {
+                modificatori_layer {
 
         bindings = <
 &none           &none           &none           &none           &none           &none                                                                                          &none           &none           &none           &none           &none           &none
