@@ -34,7 +34,7 @@ include:
     artifact-name: hillside46_right
   - board: nice_nano_v2
     shield: settings_reset
-    artifact-name: hillside46_left-reset
+    artifact-name: hillside46_right-reset
 #  - board: seeeduino_xiao_ble
 #    shield: settings_reset
 #  - board: nice_nano_v2
